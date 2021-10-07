@@ -60,7 +60,7 @@ X = vectorizer.fit_transform(corpus).toarray()
 from sklearn.model_selection import train_test_split
 text_train, text_test, sent_train, sent_test = train_test_split(X,y,test_size = 0.2, random_state = 0)
 
-#Logistic Regression
+#SVM
 from sklearn import svm
 classifier = svm.SVC(kernel='linear')
 classifier.fit(text_train, sent_train)
